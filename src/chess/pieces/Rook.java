@@ -14,6 +14,12 @@ public class Rook extends PecaDeXadrez{
 	public String toString() {
 		return "R";
 	}
+
+	@Override
+	public boolean[][] movPossivel() {
+		boolean[][] mat = new boolean[getTabuleiro().getLinhas()][getTabuleiro().getColunas()];
+		return mat;
+	}
 	
 	
 }
