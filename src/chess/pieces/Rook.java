@@ -36,7 +36,7 @@ public class Rook extends PecaDeXadrez {
 		p.setValores(posicao.getLinha(), posicao.getColuna() - 1);
 		while (getTabuleiro().posicaoExiste(p) && !getTabuleiro().haUmaPeca(p)) {
 			mat[p.getLinha()][p.getColuna()] = true;
-			p.setLinha(p.getColuna() - 1);
+			p.setColuna(p.getColuna() - 1);
 		}
 		if (getTabuleiro().posicaoExiste(p) && haUmaPecaOponente(p)) {
 			mat[p.getLinha()][p.getColuna()] = true;
@@ -46,7 +46,7 @@ public class Rook extends PecaDeXadrez {
 		p.setValores(posicao.getLinha(), posicao.getColuna() + 1);
 		while (getTabuleiro().posicaoExiste(p) && !getTabuleiro().haUmaPeca(p)) {
 			mat[p.getLinha()][p.getColuna()] = true;
-			p.setLinha(p.getColuna() + 1);
+			p.setColuna(p.getColuna() + 1);
 		}
 		if (getTabuleiro().posicaoExiste(p) && haUmaPecaOponente(p)) {
 			mat[p.getLinha()][p.getColuna()] = true;

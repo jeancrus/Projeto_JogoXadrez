@@ -3,7 +3,6 @@ package application;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import boardgame.ExcecaoTabuleiro;
 import chess.ExcecaoXadrez;
 import chess.PartidaDeXadrez;
 import chess.PecaDeXadrez;
