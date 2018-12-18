@@ -11,6 +11,7 @@ import chess.pieces.Bishop;
 import chess.pieces.King;
 import chess.pieces.Knight;
 import chess.pieces.Pawn;
+import chess.pieces.Queen;
 import chess.pieces.Rook;
 
 public class PartidaDeXadrez {
@@ -195,6 +196,7 @@ public class PartidaDeXadrez {
 		colocarNovaPeca('a', 1, new Rook(tabuleiro, Cor.WHITE));
 		colocarNovaPeca('b', 1, new Knight(tabuleiro, Cor.WHITE));
 		colocarNovaPeca('c', 1, new Bishop(tabuleiro, Cor.WHITE));
+		colocarNovaPeca('d', 1, new Queen(tabuleiro, Cor.WHITE));
 		colocarNovaPeca('e', 1, new King(tabuleiro, Cor.WHITE));
 		colocarNovaPeca('f', 1, new Bishop(tabuleiro, Cor.WHITE));
 		colocarNovaPeca('g', 1, new Knight(tabuleiro, Cor.WHITE));
@@ -211,6 +213,7 @@ public class PartidaDeXadrez {
 		colocarNovaPeca('a', 8, new Rook(tabuleiro, Cor.BLACK));
 		colocarNovaPeca('b', 8, new Knight(tabuleiro, Cor.BLACK));
 		colocarNovaPeca('c', 8, new Bishop(tabuleiro, Cor.BLACK));
+		colocarNovaPeca('d', 8, new Queen(tabuleiro, Cor.BLACK));
 		colocarNovaPeca('e', 8, new King(tabuleiro, Cor.BLACK));
 		colocarNovaPeca('f', 8, new Bishop(tabuleiro, Cor.BLACK));
 		colocarNovaPeca('g', 8, new Knight(tabuleiro, Cor.BLACK));
