@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 import boardgame.Peca;
 import boardgame.Posicao;
 import boardgame.Tabuleiro;
+import chess.pieces.Bishop;
 import chess.pieces.King;
 import chess.pieces.Pawn;
 import chess.pieces.Rook;
@@ -191,7 +192,9 @@ public class PartidaDeXadrez {
 
 	private void configuracaoInicial() {
 		colocarNovaPeca('a', 1, new Rook(tabuleiro, Cor.WHITE));
+		colocarNovaPeca('c', 1, new Bishop(tabuleiro, Cor.WHITE));
 		colocarNovaPeca('e', 1, new King(tabuleiro, Cor.WHITE));
+		colocarNovaPeca('f', 1, new Bishop(tabuleiro, Cor.WHITE));
 		colocarNovaPeca('h', 1, new Rook(tabuleiro, Cor.WHITE));
 		colocarNovaPeca('a', 2, new Pawn(tabuleiro, Cor.WHITE));
 		colocarNovaPeca('b', 2, new Pawn(tabuleiro, Cor.WHITE));
@@ -203,7 +206,9 @@ public class PartidaDeXadrez {
 		colocarNovaPeca('h', 2, new Pawn(tabuleiro, Cor.WHITE));
 		
 		colocarNovaPeca('a', 8, new Rook(tabuleiro, Cor.BLACK));
+		colocarNovaPeca('c', 8, new Bishop(tabuleiro, Cor.BLACK));
 		colocarNovaPeca('e', 8, new King(tabuleiro, Cor.BLACK));
+		colocarNovaPeca('f', 8, new Bishop(tabuleiro, Cor.BLACK));
 		colocarNovaPeca('h', 8, new Rook(tabuleiro, Cor.BLACK));
 		colocarNovaPeca('a', 7, new Pawn(tabuleiro, Cor.BLACK));
 		colocarNovaPeca('b', 7, new Pawn(tabuleiro, Cor.BLACK));
